@@ -6,19 +6,20 @@ class A:
 class B:
     def show(self):
         print("BBBBB")        
-        # return A.show(self)
+        return A.show(self)
      
      
  #  Priority is with  B  first C goes to B then A :    
 class C(B,A):
     def show(self):
        print("CCCC")
-       return A.show(self)  
+       return B.show(self)  
            
      
      
 c=C()
 c.show()
+print()
 super(C,c).show()   
      
      
