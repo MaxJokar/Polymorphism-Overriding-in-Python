@@ -9,7 +9,7 @@ class B:
         # return A.show(self)
      
      
-     
+ #  Priority is with  B  first C goes to B then A :    
 class C(B,A):
     def show(self):
        print("CCCC")
