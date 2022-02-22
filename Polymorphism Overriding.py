@@ -1,4 +1,4 @@
-
+#Multiple Inheritance
 class A:
     def show(self):
         print("AAAAAA")
