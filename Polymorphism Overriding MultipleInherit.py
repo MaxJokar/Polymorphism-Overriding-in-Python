@@ -7,6 +7,9 @@ class B:
     def show(self):
         print("BBBBB")        
         return A.show(self)
+    # def show2(self):
+    #     print("BBBBB222")        
+    #     return A.show(self)
      
      
  #  Priority is with  B  first C goes to B then A :    
@@ -18,9 +21,10 @@ class C(B,A):
      
      
 c=C()
-c.show()
-print()
-super(C,c).show()   
+# c.show()
+# print()
+super(C,c).show()  
+# super(C,c).show2()   
      
      
      
